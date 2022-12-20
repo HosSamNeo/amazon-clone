@@ -1,16 +1,19 @@
 import Head from 'next/head';
-import React from 'react';
+import Header from '../Components/Header';
+import Banner from '../Components/Banner';
+import ProductFeed from '../Components/ProductFeed';
 
 const index = () => {
   return (
-   <>
+  <>
     <Head>
       <title>Amazon Clone</title>
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </Head>
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-    </h1>  
+    <Header />    
+    <main className='max-w-screen-2xl mx-auto'>
+      <Banner />
+      <ProductFeed />
+    </main>
   </>
   )
 }
