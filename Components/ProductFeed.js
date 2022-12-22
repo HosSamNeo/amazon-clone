@@ -1,6 +1,6 @@
 import { nanoid } from "@reduxjs/toolkit";
 import Product from "./Product";
-import ad from '../public/amazon-ad.jpg';
+import ad from './amazon-ad.jpg';
 import Image from "next/image";
 const ProductFeed = ({ products }) => {
   return (

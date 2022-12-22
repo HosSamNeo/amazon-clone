@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/outline";
-import ImgPlaceHolder from '../public/productPlaceHolder.webp';
+import ImgPlaceHolder from './productPlaceHolder.webp';
 import { nanoid } from "@reduxjs/toolkit";
 
 const Product = ({description,title,price,category,rating:{rate}}) => {

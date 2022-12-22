@@ -8,7 +8,7 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
-import logo from "../public/amazon-logo.jpg";
+import logo from "./amazon-logo.jpg";
 
 
 const Header = () => {
