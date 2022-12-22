@@ -12,7 +12,7 @@ const Banner = () => {
         showStatus={false}
         showIndicators={false}
         showThumbs={false}
-        interval={5000}
+        interval={4000}
       >
         <div>
           <Image src='/carousel-one.jpg' alt="carouselOne" loading="lazy" />
