@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../Components/Header';
 import Banner from '../Components/Banner';
 import ProductFeed from '../Components/ProductFeed';
+import axios from 'axios';
 
 export default function index({ products }) {
   return (
@@ -20,7 +21,7 @@ export default function index({ products }) {
 
 export async function getServerSideProps(context){
   
-  const products = await fetch('http://localhost:3000/api/products')
+  const products = await axios.get('http://localhost:3000/api/products')
   .then(res => res.json());
 
   return {
