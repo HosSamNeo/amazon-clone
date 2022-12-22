@@ -18,7 +18,7 @@ const Header = () => {
 
       <div className="flex items-center align-center bg-amazon_blue p-1 flex-grow py-1">
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-          <Image style={{minWidth:'100px'}} src={logo} alt="logo" className="cursor-pointer p-1" />
+          <Image src={logo} alt="logo" className="cursor-pointer p-1" />
         </div>
 
         <div className="cursor-pointer items-center h-10 rounded-md flex-grow hidden sm:flex bg-yellow-400 hover:bg-yellow-500 my-2 mx-2">
@@ -59,7 +59,7 @@ const Header = () => {
         </p>
         <div className="link">Prime video</div>
         <div className="link">Amazon business</div>
-        <div className="link">Today's deal</div>
+        <div className="link">Today deal</div>
         <div className="link hidden lg:inline-flex">Electronics</div>
         <div className="link hidden lg:inline-flex">Food & grocery</div>
         <div className="link hidden lg:inline-flex">Prime</div>
