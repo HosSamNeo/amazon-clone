@@ -1,6 +1,11 @@
-module.exports = {
+const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
   reactStrictMode: true,
   images:{
-    domains:['fakestoreapi.com/','links.papareact.com/'],
-  }
+    domains:[],
+  },
 }
+
+module.exports = nextConfig;
