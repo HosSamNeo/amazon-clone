@@ -8,7 +8,7 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
-import logo from "./amazon-logo.jpg";
+
 
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
 
       <div className="flex items-center align-center bg-amazon_blue p-1 flex-grow py-1">
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-          <Image src={logo} alt="logo" className="cursor-pointer p-1" />
+          <Image src='/amazon-logo.jpg' alt="logo" className="cursor-pointer p-1" />
         </div>
 
         <div className="cursor-pointer items-center h-10 rounded-md flex-grow hidden sm:flex bg-yellow-400 hover:bg-yellow-500 my-2 mx-2">

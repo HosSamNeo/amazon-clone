@@ -1,9 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import carouselOne from "./carousel-one.jpg";
-import carouselTwo from "./carousel-two.jpg";
-import carouselThree from "./carousel-three.jpg";
 
 const Banner = () => {
   return (
@@ -18,15 +15,15 @@ const Banner = () => {
         interval={5000}
       >
         <div>
-          <Image src={carouselOne} alt="carouselOne" loading="lazy" />
+          <Image src='/carousel-one.jpg' alt="carouselOne" loading="lazy" />
         </div>
 
         <div>
-          <Image src={carouselTwo} alt="carouselTwo" loading="lazy" />
+          <Image src='/carousel-two.jpg' alt="carouselTwo" loading="lazy" />
         </div>
 
         <div>
-          <Image src={carouselThree} alt="carouselThree" loading="lazy" />
+          <Image src='/carousel-three.jpg' alt="carouselThree" loading="lazy" />
         </div>
       </Carousel>
     </div>

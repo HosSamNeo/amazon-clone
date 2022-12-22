@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/outline";
-import ImgPlaceHolder from './productPlaceHolder.webp';
 import { nanoid } from "@reduxjs/toolkit";
 
 const Product = ({description,title,price,category,rating:{rate}}) => {
@@ -8,7 +7,7 @@ const Product = ({description,title,price,category,rating:{rate}}) => {
     return (
         <div className="relative flex flex-col bg-white z-30 p-10 my-3 mx-3">
             <p className="absolute top-3 right-3 text-xs italic">{category}</p>
-            <Image className="m-auto" src={ImgPlaceHolder} height={200} width={200} alt='product' />
+            <Image className="m-auto" src='/productPlaceHolder.webp' height={200} width={200} alt='product' />
             <h4 className="my-3">{title}</h4>
             <div className="flex">
                 {

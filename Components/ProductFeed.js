@@ -1,6 +1,5 @@
 import { nanoid } from "@reduxjs/toolkit";
 import Product from "./Product";
-import ad from './amazon-ad.jpg';
 import Image from "next/image";
 const ProductFeed = ({ products }) => {
   return (
@@ -18,7 +17,7 @@ const ProductFeed = ({ products }) => {
           rating={rating}
         />
       ))}
-      <Image className="md:col-span-full" src={ad} alt="amazon-ad" />
+      <Image className="md:col-span-full" src='/amazon-ad.jpg' alt="amazon-ad" />
 
       {products.slice(4,products.length).map(({id,title,image,price,description,category,rating}) => (
         <Product  
