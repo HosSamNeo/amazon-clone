@@ -1,32 +1,23 @@
-import Head from 'next/head';
-import Header from '../Components/Header';
-import Banner from '../Components/Banner';
-import ProductFeed from '../Components/ProductFeed';
-import axios from 'axios';
+import Head from "next/head";
+import Header from "../Components/Header";
+import Banner from "../Components/Banner";
+import ProductFeed from "../Components/ProductFeed";
+import { Provider } from "react-redux";
+import { store } from "../store/store";
 
-export default function index({ products }) {
+export default function index() {
   return (
-  <>
-    <Head>
-      <title>Amazon Clone</title>
-    </Head>
-    <Header />    
-    <main className='max-w-screen-2xl mx-auto my-auto'>
-      <Banner />
-      <ProductFeed products={products} />
-    </main>
-  </>
-  )
-}
-
-export async function getServerSideProps(context){
-  
-  const products = await axios.get('http://localhost:3000/api/products')
-  .then(res => res.json());
-
-  return {
-    props:{
-      products,
-    }
-  }
+    <>
+      <Provider store={store}>
+        <Head>
+          <title>Amazon Clone</title>
+        </Head>
+        <Header />
+        <main className="max-w-screen-2xl mx-auto my-auto">
+          <Banner />
+          <ProductFeed />
+        </main>
+      </Provider>
+    </>
+  );
 }
