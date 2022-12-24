@@ -13,7 +13,9 @@ const Header = () => {
       <div className="flex items-center align-center bg-amazon_blue p-1 flex-grow py-1">
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           <img
-            src="/amazon-logo.jpg"
+            width={150}
+            height={30}
+            src="/amazon.png"
             alt="logo"
             className="cursor-pointer p-1"
           />
